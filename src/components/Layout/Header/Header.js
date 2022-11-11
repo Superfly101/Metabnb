@@ -2,7 +2,7 @@ import { Link } from "react-router-dom";
 
 const Header = () => {
   return (
-    <header className="container mx-auto flex justify-between py-8 px-4">
+    <header className="container mx-auto flex justify-between py-8 px-4 md:px-12">
       <div className="w-40">
         <img className="w-full" src="/logo.png" alt="Metabnb logo" />
       </div>
@@ -20,7 +20,7 @@ const Header = () => {
           <Link to={""}>Community</Link>
         </li>
       </ul>
-      <button className="bg-gradient text-white py-2 px-4 rounded-lg hover:opacity-75">
+      <button className="bg-gradient text-white py-2 px-4 rounded-md hover:opacity-75">
         Connect wallet
       </button>
     </header>
