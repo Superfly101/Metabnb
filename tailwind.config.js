@@ -5,11 +5,13 @@ module.exports = {
     fontFamily: {
       sans: ["Red Rose", "cursive"],
     },
-    colors: {
-      black: "#434343",
-      purple: "#a02279",
+
+    extend: {
+      colors: {
+        black: "#434343",
+        purple: "#a02279",
+      },
     },
-    extend: {},
   },
   plugins: [],
 };
