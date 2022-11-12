@@ -9,7 +9,7 @@ const SideBar = ({ show }) => {
     >
       <ul className="pt-16 text-black w-full md:flex">
         <li className="border-b py-6 px-4">
-          <Link to={"home"}>Home</Link>
+          <Link to={"/"}>Home</Link>
         </li>
         <li className="border-b py-6 px-4">
           <Link to={"places"}>Place to stay</Link>

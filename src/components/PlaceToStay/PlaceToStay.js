@@ -5,7 +5,7 @@ const PlaceToStay = () => {
     <main>
       <section className="py-8 container mx-auto px-4 md:px-8">
         <div className="flex w-full gap-12 justify-start items-center md:justify-between">
-          <select className="px-4 py-2 rounded-lg md:hidden">
+          <select className="px-4 py-2 rounded-lg bg-transparent border md:hidden">
             <option>Resturant</option>
             <option>Cottage</option>
             <option>Castle</option>

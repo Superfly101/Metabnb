@@ -17,7 +17,7 @@ const Header = () => {
         </div>
         <ul className="hidden gap-6 md:flex">
           <li>
-            <Link to={"home"}>Home</Link>
+            <Link to={"/"}>Home</Link>
           </li>
           <li>
             <Link to={"places"}>Place to stay</Link>
