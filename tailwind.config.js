@@ -11,6 +11,9 @@ module.exports = {
         black: "#434343",
         purple: "#a02279",
       },
+      boxShadow: {
+        bottom: "0 4px 10px 0 rgb(0 49 39 / 18%)",
+      },
     },
   },
   plugins: [],
