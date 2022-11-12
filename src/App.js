@@ -96,8 +96,8 @@ function App() {
       </section>
 
       {/* Learn more section */}
-      <section className="flex flex-col gap-4 justify-between items-center py-12 px-4 bg-gradient text-white md:px-12 md:flex-row">
-        <div className="flex flex-col gap-8 md:w-1/3">
+      <section className="flex flex-col gap-4 justify-between items-center py-32 px-4 bg-gradient text-white md:px-20 md:flex-row">
+        <div className="flex flex-col gap-8 lg:w-1/3">
           <h3 className="text-3xl font-bold">Metabnb NFTs</h3>
 
           <p>
@@ -109,6 +109,30 @@ function App() {
           <button className="bg-white py-3 px-6 text-sm text-purple rounded-lg w-fit">
             Learn more
           </button>
+        </div>
+
+        <div className="hidden w-2/3 px-8 relative flex justify-center items-center lg:flex">
+          <div className="w-[25rem] relative -left-20 top-[2rem] z-[2]">
+            <img
+              className="w-full"
+              src="/assets/illustration1.png"
+              alt="Places illstrations"
+            />
+          </div>
+          <div className="w-[25rem] absolute -top-20 right-10 z-0">
+            <img
+              className="w-full"
+              src="/assets/illustration2.png"
+              alt="Places illstrations"
+            />
+          </div>
+          <div className="w-[25rem] absolute top-[8rem] right-0 z-[4]">
+            <img
+              className="w-full"
+              src="/assets/illustration3.png"
+              alt="Places illstrations"
+            />
+          </div>
         </div>
       </section>
     </main>
