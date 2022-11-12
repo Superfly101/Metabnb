@@ -1,7 +1,7 @@
 import Place from "./Place";
 
-const PlaceItems = () => {
-  const PLACE_LIST = [
+const PlaceItems = ({ places }) => {
+  const PLACE_LIST = places || [
     { image: "/assets/place1.png" },
     { image: "/assets/place2.png" },
     { image: "/assets/place3.png" },
