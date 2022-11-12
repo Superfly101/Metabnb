@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom";
 
-const SideBar = ({ show }) => {
+const SideBar = ({ show, toggleModal }) => {
   return (
     <aside
       className={`fixed z-10 w-full bg-white transition duration-[400ms] top-0 right-0 ${
@@ -22,7 +22,10 @@ const SideBar = ({ show }) => {
         </li>
       </ul>
       <div className="py-6 px-4">
-        <button className="bg-gradient text-white w-full py-2 px-4 rounded-md hover:opacity-75">
+        <button
+          className="bg-gradient text-white w-full py-2 px-4 rounded-md hover:opacity-75"
+          onClick={toggleModal}
+        >
           Connect wallet
         </button>
       </div>

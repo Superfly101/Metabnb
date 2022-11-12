@@ -1,12 +1,19 @@
 import { useState } from "react";
 import { Link } from "react-router-dom";
+import ConnectWallet from "../ConnectWallet/ConnectWallet";
 import SideBar from "./SideBar";
 
 const Header = () => {
   const [showSidebar, setShowSidebar] = useState(false);
 
+  const [showConnectWallet, setShowConnectWallet] = useState(false);
+
   const toggleSidebar = () => {
     setShowSidebar((prev) => !prev);
+  };
+
+  const toggleConnectWallet = () => {
+    setShowConnectWallet((prev) => !prev);
   };
 
   return (
@@ -29,7 +36,10 @@ const Header = () => {
             <Link to={""}>Community</Link>
           </li>
         </ul>
-        <button className="hidden bg-gradient text-white py-2 px-4 rounded-md hover:opacity-75 md:block">
+        <button
+          className="hidden bg-gradient text-white py-2 px-4 rounded-md hover:opacity-75 md:block"
+          onClick={toggleConnectWallet}
+        >
           Connect wallet
         </button>
 
@@ -42,7 +52,10 @@ const Header = () => {
           <div className="bg-white h-[2px] rounded-lg"></div>
         </div>
       </header>
-      <SideBar show={showSidebar} />
+      <SideBar show={showSidebar} toggleModal={toggleConnectWallet} />
+      {showConnectWallet && (
+        <ConnectWallet onCloseHandler={toggleConnectWallet} />
+      )}
     </>
   );
 };
