@@ -4,8 +4,9 @@ const PlaceToStay = () => {
   return (
     <main>
       <section className="py-8 container mx-auto px-4 md:px-8">
-        <div className="flex w-full gap-12 justify-start items-center md:justify-between">
+        <div className="flex w-full gap-6 md:gap-12 md:justify-between items-center">
           <select className="px-4 py-2 rounded-lg bg-transparent border md:hidden">
+            <option>-- Select Filter --</option>
             <option>Resturant</option>
             <option>Cottage</option>
             <option>Castle</option>
@@ -16,14 +17,14 @@ const PlaceToStay = () => {
           </select>
 
           <ul className="flex w-full justify-between hidden md:flex">
-            <li>Resturant</li>
-            <li>Cottage</li>
-            <li>Castle</li>
-            <li>Fantast city</li>
-            <li>Beach</li>
-            <li>Carbins</li>
-            <li>Off-grid</li>
-            <li>Farm</li>
+            <li className="cursor-pointer">Resturant</li>
+            <li className="cursor-pointer">Cottage</li>
+            <li className="cursor-pointer">Castle</li>
+            <li className="cursor-pointer">Fantast city</li>
+            <li className="cursor-pointer">Beach</li>
+            <li className="cursor-pointer">Carbins</li>
+            <li className="cursor-pointer">Off-grid</li>
+            <li className="cursor-pointer">Farm</li>
           </ul>
           <div>
             <input

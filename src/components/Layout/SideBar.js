@@ -1,6 +1,8 @@
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 
-const SideBar = ({ show, toggleModal }) => {
+const SideBar = ({ navItems, show, toggleModal, toggleSidebar }) => {
+  const navigate = useNavigate();
+
   return (
     <aside
       className={`fixed z-10 w-full bg-white transition duration-[400ms] top-0 right-0 ${
@@ -8,18 +10,18 @@ const SideBar = ({ show, toggleModal }) => {
       } shadow-bottom md:hidden`}
     >
       <ul className="pt-16 text-black w-full md:flex">
-        <li className="border-b py-6 px-4">
-          <Link to={"/"}>Home</Link>
-        </li>
-        <li className="border-b py-6 px-4">
-          <Link to={"places"}>Place to stay</Link>
-        </li>
-        <li className="border-b py-6 px-4">
-          <Link to={""}>NFTs</Link>
-        </li>
-        <li className="border-b py-6 px-4">
-          <Link to={""}>Community</Link>
-        </li>
+        {navItems.map((item, index) => (
+          <li
+            key={index}
+            onClick={() => {
+              navigate(item.path);
+              toggleSidebar();
+            }}
+            className="border-b py-6 px-4 cursor-pointer hover:bg-[#F8F9FA]"
+          >
+            <Link to={item.path}>{item.title}</Link>
+          </li>
+        ))}
       </ul>
       <div className="py-6 px-4">
         <button
