@@ -4,7 +4,7 @@ function App() {
   return (
     <main className="text-black">
       {/* Hero Section */}
-      <section className="flex flex-col gap-4 justify-between items-center container mx-auto py-8 px-4 md:px-12 md:flex-row">
+      <section className="flex flex-col gap-4 justify-between items-center py-8 px-4 md:px-16 md:flex-row">
         <div className="flex flex-col gap-8 md:w-1/2">
           <h1 className="text-4xl">
             Rent a <span className="text-purple font-bold">Place</span> away
@@ -87,7 +87,7 @@ function App() {
       </div>
 
       {/* Places to live section */}
-      <section className="py-8 container mx-auto px-4">
+      <section className="py-8 px-4 md:px-16">
         <h3 className="text-2xl text-center font-bold">
           Inspiration for your next adventure
         </h3>

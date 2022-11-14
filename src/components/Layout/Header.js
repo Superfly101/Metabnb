@@ -36,11 +36,11 @@ const Header = () => {
 
   return (
     <>
-      <header className="sticky z-20 bg-white top-0 flex justify-between items-center py-4 px-4 text-black md:py-8 md:px-16">
+      <header className="sticky z-20 bg-white top-0 flex justify-between items-center py-4 px-4 text-black md:px-16">
         <div className="w-40">
           <img className="w-full" src="/logo.png" alt="Metabnb logo" />
         </div>
-        <ul className="hidden gap-10 md:flex">
+        <ul className="hidden gap-10 lg:flex">
           {NAVIGATION_LIST.map((element, index) => (
             <li key={index}>
               <Link to={element.path}>{element.title}</Link>
@@ -48,7 +48,7 @@ const Header = () => {
           ))}
         </ul>
         <button
-          className="hidden bg-gradient text-white py-2 px-4 rounded-md hover:opacity-75 md:block"
+          className="hidden bg-gradient text-white py-2 px-4 rounded-md hover:opacity-75 lg:block"
           onClick={toggleConnectWallet}
         >
           Connect wallet
@@ -56,7 +56,7 @@ const Header = () => {
 
         <div
           onClick={toggleSidebarHandler}
-          className="relative z-20 flex flex-col h-10 w-10 p-2 gap-[.3rem] bg-purple rounded-full justify-center cursor-pointer md:hidden"
+          className="relative z-20 flex flex-col h-10 w-10 p-2 gap-[.3rem] bg-purple rounded-full justify-center cursor-pointer lg:hidden"
         >
           <div className="bg-white h-[2px] rounded-lg"></div>
           <div className="bg-white h-[2px] rounded-lg"></div>

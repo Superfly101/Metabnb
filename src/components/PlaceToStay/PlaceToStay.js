@@ -3,7 +3,7 @@ import PlaceItems from "../PlaceItems/PlaceItems";
 const PlaceToStay = () => {
   return (
     <main>
-      <section className="py-8 container mx-auto px-4 md:px-8">
+      <section className="py-8  px-4 md:px-16">
         <div className="flex w-full gap-6 md:gap-12 md:justify-between items-center">
           <select className="px-4 py-2 rounded-lg bg-transparent border md:hidden">
             <option>-- Select Filter --</option>

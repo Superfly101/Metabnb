@@ -7,9 +7,9 @@ const SideBar = ({ navItems, show, toggleModal, toggleSidebar }) => {
     <aside
       className={`fixed z-10 w-full bg-white transition duration-[400ms] top-0 right-0 ${
         show ? "translate-y-0" : "-translate-y-full"
-      } shadow-bottom md:hidden`}
+      } shadow-bottom lg:hidden`}
     >
-      <ul className="pt-16 text-black w-full md:flex">
+      <ul className="pt-16 text-black w-full lg:flex">
         {navItems.map((item, index) => (
           <li
             key={index}
