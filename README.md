@@ -1,8 +1,8 @@
 # Getting Started
 
-Make sure to have node installed
+Make sure to have node installed.
 
-Install project dependencies run:
+To install project dependencies run:
 
 ```bash
 npm install
@@ -24,7 +24,9 @@ You may also see any lint errors in the console.
 
 ### Testing
 
-`npm test`
+```bash
+npm test
+```
 
 Launches the test runner in the interactive watch mode.\
 See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
