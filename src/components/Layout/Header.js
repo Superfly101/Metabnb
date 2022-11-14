@@ -40,7 +40,7 @@ const Header = () => {
         <div className="w-40">
           <img className="w-full" src="/logo.png" alt="Metabnb logo" />
         </div>
-        <ul className="hidden gap-6 md:flex">
+        <ul className="hidden gap-10 md:flex">
           {NAVIGATION_LIST.map((element, index) => (
             <li key={index}>
               <Link to={element.path}>{element.title}</Link>
