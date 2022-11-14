@@ -2,7 +2,7 @@ import PlaceList from "./components/PlaceItems/PlaceItems";
 
 function App() {
   return (
-    <main className="">
+    <main className="text-black">
       {/* Hero Section */}
       <section className="flex flex-col gap-4 justify-between items-center container mx-auto py-8 px-4 md:px-12 md:flex-row">
         <div className="flex flex-col gap-8 md:w-1/2">

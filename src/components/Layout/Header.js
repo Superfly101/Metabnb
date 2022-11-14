@@ -36,7 +36,7 @@ const Header = () => {
 
   return (
     <>
-      <header className="sticky z-20 bg-white top-0 flex justify-between items-center py-4 px-4 md:py-8 md:px-16">
+      <header className="sticky z-20 bg-white top-0 flex justify-between items-center py-4 px-4 text-black md:py-8 md:px-16">
         <div className="w-40">
           <img className="w-full" src="/logo.png" alt="Metabnb logo" />
         </div>
