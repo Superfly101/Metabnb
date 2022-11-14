@@ -26,11 +26,16 @@ const PlaceToStay = () => {
             <li className="cursor-pointer">Off-grid</li>
             <li className="cursor-pointer">Farm</li>
           </ul>
-          <div>
+          <div className="relative">
             <input
               type="text"
               placeholder="Location"
-              className="border px-4 py-2 w-36 rounded-lg"
+              className="border px-4 py-2 w-40 rounded-lg"
+            />
+            <img
+              className="absolute top-2.5 right-4"
+              src="/assets/setting.svg"
+              alt="Location icon"
             />
           </div>
         </div>
