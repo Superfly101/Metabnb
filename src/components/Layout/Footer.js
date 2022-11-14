@@ -1,6 +1,6 @@
 const Footer = () => {
   return (
-    <footer className="relative py-12 px-4 bg-[#1D1D1E] flex text-white md:px-12">
+    <footer className="relative pt-12 pb-16 px-4 bg-[#1D1D1E] flex text-white md:px-12">
       <div className="container mx-auto grid grid-cols-2 gap-8 md:grid-cols-4">
         <section className="flex flex-col gap-16">
           <div className="w-40">
@@ -91,7 +91,7 @@ const Footer = () => {
         </section>
       </div>
 
-      <small className="absolute bottom-4">&copy; 2022 Metabnb</small>
+      <small className="absolute bottom-6">&copy; 2022 Metabnb</small>
     </footer>
   );
 };
