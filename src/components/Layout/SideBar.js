@@ -27,7 +27,6 @@ const SideBar = ({ navItems, show, toggleModal, toggleSidebar }) => {
         <button
           className="bg-gradient text-white w-full py-2 px-4 rounded-md hover:opacity-75"
           onClick={() => {
-            toggleSidebar();
             toggleModal();
           }}
         >

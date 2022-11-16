@@ -2,7 +2,7 @@ import Star from "../Star/Star";
 
 const Place = ({ src }) => {
   return (
-    <div className="flex flex-col gap-3 p-3 rounded-xl border text-[.8rem] sm:w-[18rem]">
+    <div className="flex flex-col gap-3 p-3 rounded-xl border text-[.8rem] sm:w-[17rem]">
       <img className="w-full" src={src} alt="" />
       <p className="flex justify-between">
         <span>Desert King</span>{" "}
