@@ -12,7 +12,7 @@ const PlaceItems = ({ places }) => {
     { image: "/assets/place8.png" },
   ];
   return (
-    <div className="flex flex-wrap justify-center gap-4 mt-6">
+    <div className="grid gap-4 mt-6 sl:grid-cols-2 lg:grid-cols-4">
       {PLACE_LIST.map((place, index) => (
         <Place key={index} src={place.image} />
       ))}
