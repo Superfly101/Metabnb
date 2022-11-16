@@ -26,7 +26,10 @@ const SideBar = ({ navItems, show, toggleModal, toggleSidebar }) => {
       <div className="py-6 px-4">
         <button
           className="bg-gradient text-white w-full py-2 px-4 rounded-md hover:opacity-75"
-          onClick={toggleModal}
+          onClick={() => {
+            toggleSidebar();
+            toggleModal();
+          }}
         >
           Connect wallet
         </button>
